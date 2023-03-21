@@ -13,11 +13,14 @@ import linkDinIconSvg from "../public/svg/link-din.svg";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
 
 export default function Home() {
   const [showMobileDropDown, setShowMobileDropDown] = useState(false);
 
   useEffect(() => {}, [showMobileDropDown]);
+
+  const router = useRouter();
 
   return (
     <>
@@ -37,23 +40,39 @@ export default function Home() {
                   </Link>
                 </div>
                 <div className={"hidden sm:block mx-auto"}>
-                  <div className="flex items-center space-x-4">
-                    <Link
-                      href="#"
-                      className="text-[#8F8E90] px-3 py-2 hover:text-slate-900 font-medium"
-                      aria-current="page"
+                  <ul className="flex items-center space-x-4">
+                    <li
+                      className={
+                        router.pathname == "/"
+                          ? "text-slate-900"
+                          : "text-[#8F8E90]"
+                      }
                     >
-                      Home
-                    </Link>
-                    <Link
-                      href="#"
-                      className="text-[#8F8E90] px-3 py-2 hover:text-slate-900  font-medium"
+                      <Link
+                        href="/"
+                        className="px-3 py-2 hover:text-slate-900 font-medium"
+                        aria-current="page"
+                      >
+                        Home
+                      </Link>
+                    </li>
+                    <li
+                      className={
+                        router.pathname == "/blog"
+                          ? "text-slate-900"
+                          : "text-[#8F8E90]"
+                      }
                     >
-                      Blog
-                    </Link>
-                  </div>
+                      <Link
+                        href="#"
+                        className="px-3 py-2 hover:text-slate-900  font-medium"
+                      >
+                        Blog
+                      </Link>
+                    </li>
+                  </ul>
                 </div>
-                <div className="absolute sm:block hidden inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                <div className="absolute sm:block hidden inset-y-0 right-0 items-center sm:static sm:inset-auto sm:pr-0">
                   <button className="bg-[#8247E5] h-10 hover:bg-violet-600 w-32 text-white font-medium">
                     Contact
                   </button>
@@ -115,7 +134,7 @@ export default function Home() {
         </div>
         {/* nav bar end  */}
         {/* content - 1 start  */}
-        <div className="sm:py-24 py-20 px-5 md:px-0 container mx-auto">
+        <div className="sm:py-24 py-20 px-5 md:px-12 lg:px-24 container mx-auto">
           <div className="grid sm:grid-cols-2 sm:gap-4 gap-y-6">
             <div className="sm:text-left text-center">
               <p className="text-[#8F8E90] uppercase text-sm tracking-[3px]">
@@ -192,7 +211,7 @@ export default function Home() {
       {/* content - 2 end  */}
       {/* content - 3 start  */}
       <div className="bg-gradient-to-b from-[#110734] to-[#443870] overflow-hidden relative">
-        <div className="sm:py-16 py-12 px-5 md:px-0 container mx-auto">
+        <div className="sm:py-16 py-12 px-5 md:px-12 lg:px-24 container mx-auto">
           <div className="grid place-content-center md:grid-cols-3 z-10 relative sm:grid-cols-4 gap-4">
             <div className="sm:col-span-4 md:col-auto">
               <div className="md:max-w-sm md:text-left text-center">
@@ -208,7 +227,7 @@ export default function Home() {
                 </p>
                 <div className="mt-6 text-white">
                   <Link
-                    className="text-lg font-bold flex hover:text-violet-600 md:justify-start justify-center items-center"
+                    className="text-lg w-fit font-bold flex hover:text-violet-600 md:justify-start justify-center items-center"
                     href="/"
                   >
                     Know more{" "}
@@ -220,7 +239,7 @@ export default function Home() {
               </div>
             </div>
             <div className="sm:col-span-2 md:col-auto">
-              <div className="md:max-w-sm rounded bg-white p-5">
+              <div className="grid grid-rows-1 md:max-w-sm h-full rounded bg-white p-5">
                 <Image
                   src={undrawTeamPng}
                   className="object-contain sm:mx-0 mx-auto h-40"
@@ -241,7 +260,7 @@ export default function Home() {
               </div>
             </div>
             <div className="sm:col-span-2 md:col-auto">
-              <div className="md:max-w-sm rounded bg-white p-5">
+              <div className="grid grid-rows-1 md:max-w-sm rounded bg-white p-5">
                 <Image
                   src={undrawPersonalPng}
                   className="object-contain sm:mx-0 mx-auto h-40"
@@ -273,85 +292,93 @@ export default function Home() {
       {/* content - 3 end  */}
       {/* content - 4 start  */}
       <div className="bg-[#F9F8FF] relative overflow-hidden ">
-        <div className="container sm:py-24 py-20 px-5 md:px-0 mx-auto">
+        <div className="container sm:py-24 py-20 px-5 md:px-12 lg:px-24 mx-auto">
           <h1 className="text-[#342F42] z-10 relative sm:text-4xl text-3xl lg:text-left text-center font-medium">
             What makes Grail private, secure and best
           </h1>
           <div className="grid lg:grid-cols-4 z-10 relative sm:grid-cols-2 sm:mt-24 mt-20 sm:gap-6 gap-y-7">
-            <div className="sm:text-left text-center">
+            <div className="sm:text-left flex flex-col items-center md:items-start text-center">
               <Image className="sm:ml-2 mx-auto" src={lockSvg} alt="lock.svg" />
-              <h3 className="text-[#342F42] sm:text-xl mt-2 text-2xl font-bold">
-                ZK-Powered KYC
-              </h3>
-              <p className="text-[#342F42] mt-3 font-medium">
-                Dapps can securely verify customer identities without collecting
-                personal information using our ZK-powered KYC solution, reducing
-                fraud and data breach risks.
-              </p>
+              <span className="mt-4 h-full">
+                <h3 className="text-[#342F42] sm:text-xl mt-2 text-2xl font-bold">
+                  ZK-Powered KYC
+                </h3>
+                <p className="text-[#342F42] mt-3 font-medium">
+                  Dapps can securely verify customer identities without
+                  collecting personal information using our ZK-powered KYC
+                  solution, reducing fraud and data breach risks.
+                </p>
+              </span>
               <Link
-                className="text-lg text-[#8247E5] hover:text-violet-700 font-bold mt-3 flex sm:justify-start justify-center items-center"
+                className="text-lg w-fit text-[#8247E5] hover:text-violet-700 font-bold mt-3 flex sm:justify-start justify-center items-center"
                 href="/"
               >
                 Know more{" "}
                 <span className="text-3xl ml-3 mb-0.5 font-medium">&#62;</span>
               </Link>
             </div>
-            <div className="sm:text-left text-center">
+            <div className="sm:text-left flex flex-col items-center md:items-start text-center">
               <Image className="sm:ml-2 mx-auto" src={lockSvg} alt="lock.svg" />
-              <h3 className="text-[#342F42] sm:text-xl mt-2 text-2xl font-bold">
-                Sybil Resistance
-              </h3>
-              <p className="text-[#342F42] mt-3 font-medium">
-                Our Sybil resistant solution will improve user experience of
-                Dapps by making it more democratic, fair and profitable for real
-                users.
-              </p>
+              <span className="mt-4 h-full relative">
+                <h3 className="text-[#342F42] sm:text-xl mt-2 text-2xl font-bold">
+                  Sybil Resistance
+                </h3>
+                <p className="text-[#342F42] mt-3 font-medium">
+                  Our Sybil resistant solution will improve user experience of
+                  Dapps by making it more democratic, fair and profitable for
+                  real users.
+                </p>
+              </span>
               <Link
-                className="text-lg text-[#8247E5] hover:text-violet-700 font-bold mt-3 flex sm:justify-start justify-center items-center"
+                className="text-lg  w-fit text-[#8247E5] hover:text-violet-700 font-bold mt-3 flex sm:justify-start justify-center items-center"
                 href="/"
               >
                 Know more{" "}
                 <span className="text-3xl ml-3 mb-0.5 font-medium">&#62;</span>
               </Link>
             </div>
-            <div className="sm:text-left text-center">
+            <div className="sm:text-left flex flex-col justify-between items-center md:items-start text-center">
               <Image
                 className="sm:ml-2 mx-auto"
                 src={identitySvg}
                 alt="lock.svg"
               />
-              <h3 className="text-[#342F42] sm:text-xl mt-2 text-2xl font-bold">
-                Identity Management
-              </h3>
-              <p className="text-[#342F42] mt-3 font-medium">
-                Our identity management solution helps Users manage their
-                personal identities securely and efficiently. Dapss can reduce
-                the risk of fraud and improve the user-onboarding experience.
-                Compliance
-              </p>
+              <span className="mt-4 h-full relative">
+                <h3 className="text-[#342F42] sm:text-xl mt-2 text-2xl font-bold">
+                  Identity Management
+                </h3>
+                <p className="text-[#342F42] mt-3 font-medium">
+                  Our identity management solution helps Users manage their
+                  personal identities securely and efficiently. Dapss can reduce
+                  the risk of fraud and improve the user-onboarding experience.
+                  Compliance
+                </p>
+              </span>
               <Link
-                className="text-lg text-[#8247E5] hover:text-violet-700 font-bold mt-3 flex sm:justify-start justify-center items-center"
+                className="text-lg w-fit text-[#8247E5] hover:text-violet-700 font-bold mt-3 flex sm:justify-start justify-center items-center"
                 href="/"
               >
                 Know more{" "}
                 <span className="text-3xl ml-3 mb-0.5 font-medium">&#62;</span>
               </Link>
             </div>
-            <div className="sm:text-left text-center">
+            <div className="sm:text-left flex flex-col justify-between items-center md:items-start text-center">
               <Image
                 className="sm:ml-2 mx-auto"
                 src={complianceSvg}
                 alt="lock.svg"
               />
-              <h3 className="text-[#342F42] sm:text-xl mt-2 text-2xl font-bold">
-                Compliance
-              </h3>
-              <p className="text-[#342F42] mt-3 font-medium">
-                Our compliance solution assists Dapps in meeting KYC and AML
-                regulations and requirements while safeguarding user’s privacy
-              </p>
+              <span className="mt-4 h-full relative">
+                <h3 className="text-[#342F42] sm:text-xl mt-2 text-2xl font-bold">
+                  Compliance
+                </h3>
+                <p className="text-[#342F42] mt-3 font-medium">
+                  Our compliance solution assists Dapps in meeting KYC and AML
+                  regulations and requirements while safeguarding user’s privacy
+                </p>
+              </span>
               <Link
-                className="text-lg text-[#8247E5] hover:text-violet-700 font-bold mt-3 flex sm:justify-start justify-center items-center"
+                className="text-lg md:absolute md:bottom-0 w-fit text-[#8247E5] hover:text-violet-700 font-bold mt-3 flex sm:justify-start justify-center items-center"
                 href="/"
               >
                 Know more{" "}
@@ -369,7 +396,7 @@ export default function Home() {
       {/* content - 4 end  */}
       {/* content - 5 start */}
       <div className="bg-white">
-        <div className="container mx-auto sm:py-16 py-12 px-5 md  :px-0">
+        <div className="container mx-auto sm:py-16 py-12 px-5 md:px-12 lg:px-24">
           <div className="grid sm:grid-cols-2 sm:gap-4 gap-y-6">
             <div className="sm:text-left text-center">
               <h1 className="text-[#342F42] sm:text-4xl text-3xl font-medium mt-3">
@@ -446,7 +473,7 @@ export default function Home() {
       </div>
       {/* content - 5 end  */}
       {/* content - 6 start  */}
-      <div className="bg-gradient-to-b from-[#FBFBFE]  via-[#DAD7FA] to-[#DAD7FA]">
+      <div className="bg-gradient-to-b from-[#ffffffb4]  via-[#DAD7FA] to-[#DAD7FA]">
         <div className="sm:py-16 py-12 px-5 sm:px-0 container mx-auto">
           <div className="text-center">
             <h1 className="text-[#342F42] sm:text-4xl text-3xl font-medium mt-3">
@@ -465,7 +492,7 @@ export default function Home() {
       {/* content - 7 start  */}
 
       <div className="bg-gradient-to-b from-[#110734] relative overflow-hidden to-[#443870]">
-        <div className="sm:py-24 py-16 px-5 sm:px-0 container mx-auto">
+        <div className="sm:py-24 py-16 px-5 md:px-12 lg:px-24 container mx-auto">
           <div className="grid z-10  relative sm:grid-cols-2 px-10 sm:px-0 sm:gap-4 gap-y-12">
             <div className="sm:order-none order-last">
               <div className="flex items-center">
