@@ -140,7 +140,7 @@ export default function Home() {
               <p className="text-[#8F8E90] uppercase text-sm tracking-[3px]">
                 Reputation & contributor management
               </p>
-              <h1 className="text-[#342F42] sm:text-4xl text-3xl font-medium mt-3">
+              <h1 className="text-[#342F42] sm:text-4xl text-3xl font-bold mt-3">
                 Your quest for a secure identity ends with Grail.
               </h1>
               <p className="mt-8">
@@ -215,7 +215,7 @@ export default function Home() {
           <div className="grid place-content-center md:grid-cols-3 z-10 relative sm:grid-cols-4 gap-4">
             <div className="sm:col-span-4 md:col-auto">
               <div className="md:max-w-sm md:text-left text-center">
-                <h1 className="text-white sm:text-3xl text-2xl font-medium">
+                <h1 className="text-white sm:text-3xl text-2xl font-bold">
                   Built with Users and DApps in mind
                 </h1>
                 <p className="mt-6 text-white">
@@ -293,7 +293,7 @@ export default function Home() {
       {/* content - 4 start  */}
       <div className="bg-[#F9F8FF] relative overflow-hidden ">
         <div className="container sm:py-24 py-20 px-5 md:px-12 lg:px-24 mx-auto">
-          <h1 className="text-[#342F42] z-10 relative sm:text-4xl text-3xl lg:text-left text-center font-medium">
+          <h1 className="text-[#342F42] z-10 relative sm:text-4xl text-3xl lg:text-left text-center font-bold">
             What makes Grail private, secure and best
           </h1>
           <div className="grid lg:grid-cols-4 z-10 relative sm:grid-cols-2 sm:mt-24 mt-20 sm:gap-6 gap-y-7">
@@ -399,7 +399,7 @@ export default function Home() {
         <div className="container mx-auto sm:py-16 py-12 px-5 md:px-12 lg:px-24">
           <div className="grid sm:grid-cols-2 sm:gap-4 gap-y-6">
             <div className="sm:text-left text-center">
-              <h1 className="text-[#342F42] sm:text-4xl text-3xl font-medium mt-3">
+              <h1 className="text-[#342F42] sm:text-4xl text-3xl font-bold mt-3">
                 Your quest for a secure identity ends with Grail.
               </h1>
               <Image
@@ -476,7 +476,7 @@ export default function Home() {
       <div className="bg-gradient-to-b from-[#ffffffb4]  via-[#DAD7FA] to-[#DAD7FA]">
         <div className="sm:py-16 py-12 px-5 sm:px-0 container mx-auto">
           <div className="text-center">
-            <h1 className="text-[#342F42] sm:text-4xl text-3xl font-medium mt-3">
+            <h1 className="text-[#342F42] sm:text-4xl text-3xl font-bold mt-3">
               Ready to experience the benefits of our ZK-powered KYC solution?
             </h1>
             <p className="text-[#342F42] mt-4">
