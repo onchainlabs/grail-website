@@ -514,35 +514,35 @@ export default function Home() {
             <div>
               <div className="grid sm:grid-cols-3 grid-cols-2 sm:gap-4 gap-x-20  gap-y-6">
                 <div className="text-white flex flex-col leading-8">
-                  <Link className="hover:text-violet-600" href="/">
+                  <Link className="hover:text-violet-600 w-fit" href="/">
                     About
                   </Link>
-                  <Link className="hover:text-violet-600" href="/">
+                  <Link className="hover:text-violet-600 w-fit" href="/">
                     Careers
                   </Link>
-                  <Link className="hover:text-violet-600" href="/">
+                  <Link className="hover:text-violet-600 w-fit" href="/">
                     Careers
                   </Link>
                 </div>
                 <div className="text-white flex flex-col leading-8">
-                  <Link className="hover:text-violet-600" href="/">
+                  <Link className="hover:text-violet-600 w-fit" href="/">
                     About
                   </Link>
-                  <Link className="hover:text-violet-600" href="/">
+                  <Link className="hover:text-violet-600 w-fit" href="/">
                     Careers
                   </Link>
-                  <Link className="hover:text-violet-600" href="/">
+                  <Link className="hover:text-violet-600 w-fit" href="/">
                     Careers
                   </Link>
                 </div>
                 <div className="text-white flex flex-col  leading-8">
-                  <Link className="hover:text-violet-600" href="/">
+                  <Link className="hover:text-violet-600 w-fit" href="/">
                     About
                   </Link>
-                  <Link className="hover:text-violet-600" href="/">
+                  <Link className="hover:text-violet-600 w-fit" href="/">
                     Careers
                   </Link>
-                  <Link className="hover:text-violet-600" href="/">
+                  <Link className="hover:text-violet-600 w-fit" href="/">
                     Careers
                   </Link>
                 </div>
@@ -565,7 +565,7 @@ export default function Home() {
               />
             </Link>
             <Link
-              className="m-0 2xl:mr-48 xl:mr-36 lg:mr-24 md:mr-16 sm:mr-11"
+              className="m-0 2xl:mr-48 xl:mr-28 lg:mr-24 md:mr-12 sm:mr-11"
               href="/"
             >
               <Image
