@@ -415,7 +415,7 @@ export default function Home() {
         <div className="container mx-auto sm:py-16 py-12 px-5 md:px-8 lg:px-24">
           <div className="grid sm:grid-cols-2 sm:gap-20 lg:gap-0 gap-y-6">
             <div className="sm:text-left text-center">
-              <h1 className="text-[#342F42] lg:text-4xl md:text-[28px] text-2xl font-extrabold mt-3">
+              <h1 className="text-[#342F42] lg:text-4xl md:text-[28px] 2xl:w-2/3 text-2xl font-extrabold mt-3">
                 Your quest for a secure identity ends with Grail.
               </h1>
               <span className="flex justify-center md:justify-start">
