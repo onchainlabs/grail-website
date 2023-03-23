@@ -33,7 +33,7 @@ export default function Home() {
       <div className="bg-[#F9F8FF]">
         {/* nav bar start / */}
         <div className="container mx-auto">
-          <nav className="pt-3 relative">
+          <nav className="pt-4 lg:pt-8 relative">
             <div className="px-4 sm:px-0 md:px-8 lg:px-16">
               <div className="relative flex h-16 items-center justify-between">
                 <div className="flex flex-shrink-0 bg-[#7659B9] items-center p-1 sm:mr-20 lg:mr-28 2xlmr-12">
@@ -226,7 +226,7 @@ export default function Home() {
                 <h1 className="text-white sm:text-3xl text-2xl font-manrope-800 font-bold">
                   Built with Users and DApps in mind
                 </h1>
-                <p className="mt-6 font-poppins-400 font-normal leading-6 tracking-[-0.04em] text-white">
+                <p className="mt-6 font-poppins-400 font-normal text-base leading-6 tracking-[-0.04em] text-white">
                   Grail offers a decentralized and privacy-preserving compliance
                   solution which has a scope to be modular, self controllable,
                   and frictionless. Such a solution can leverage a combination
@@ -262,7 +262,7 @@ export default function Home() {
                     <h2 className="md:text-2xl text-[22px] font-bold font-manrope-800 leading-[33px] tracking-[-0.025em] text-[#342F42] mt-6 md:mt-0 lg:mt-6">
                       For DApps
                     </h2>
-                    <p className="text-[#342F42] font-poppins-400 font-normal leading-[21px] tracking-[-0.04em] mt-3">
+                    <p className="text-[#342F42] font-poppins-400 font-normal text-sm leading-[21px] tracking-[-0.04em] mt-3">
                       Dapps need to implement KYC to comply with legal and
                       regulatory requirements and mitigate reputational risks.
                       KYC helps to establish trust and transparency, attract
@@ -286,7 +286,7 @@ export default function Home() {
                     <h2 className="md:text-2xl text-[22px] font-bold font-manrope-800 leading-[33px] tracking-[-0.025em] text-[#342F42] mt-6">
                       For Users
                     </h2>
-                    <p className="text-[#342F42] font-poppins-400 font-normal leading-[21px] tracking-[-0.04em] mt-3">
+                    <p className="text-[#342F42] font-poppins-400 font-normal text-sm leading-[21px] tracking-[-0.04em] mt-3">
                       This is your chance to get priority access to a wider
                       range of Dapps and services, as well as establish trust
                       and credibility. Additionally, KYC can help to prevent
