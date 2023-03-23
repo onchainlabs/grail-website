@@ -34,7 +34,7 @@ export default function Home() {
         {/* nav bar start / */}
         <div className="container mx-auto">
           <nav className="pt-3 relative">
-            <div className="md:px-8 lg:px-16">
+            <div className="px-4 md:px-8 lg:px-16">
               <div className="relative flex h-16 items-center justify-between">
                 <div className="flex flex-shrink-0 bg-[#7659B9] items-center p-1 sm:mr-20 lg:mr-28 2xlmr-12">
                   <Link href="/">
