@@ -34,7 +34,7 @@ export default function Home() {
         {/* nav bar start / */}
         <div className="container mx-auto">
           <nav className="pt-3 relative">
-            <div className="px-16">
+            <div className="md:px-8 lg:px-16">
               <div className="relative flex h-16 items-center justify-between">
                 <div className="flex flex-shrink-0 bg-[#7659B9] items-center p-1 sm:mr-20 lg:mr-28 2xlmr-12">
                   <Link href="/">
@@ -140,10 +140,10 @@ export default function Home() {
         </div>
         {/* nav bar end  */}
         {/* content - 1 start  */}
-        <div className="sm:py-24 py-20 px-5 md:px-8 lg:px-[99px] h-[511px] container mx-auto">
+        <div className="sm:py-24 py-20 px-5 sm:px-0 md:px-8 lg:px-[99px] h-[511px] container mx-auto">
           <div className="grid sm:grid-cols-2 md:gap-3 lg:gap-24 2xl:gap-80 gap-y-6">
             <div className="sm:text-left text-center">
-              <p className="text-[#8F8E90] font-poppins-500 uppercase text-[10px] md:text-xs tracking-[3px]">
+              <p className="text-[#8F8E90] font-poppins-500 uppercase sm:-mr-7 text-[10px] md:text-xs tracking-[3px]">
                 Reputation & contributor management
               </p>
               <h1 className="text-[#342F42] font-manrope-800 tracking-[-0.025em] leading-[38px] md:leading-[44px] lg:leading-[57px] md:text-[32px] lg:text-[42px] text-[28px] font-bold mt-2">
@@ -158,7 +158,7 @@ export default function Home() {
                 Contact Us
               </button>
             </div>
-            <div className="flex items-center justify-center md:justify-end md:ml-5">
+            <div className="flex items-center justify-center sm:justify-end md:ml-5">
               <Image
                 className="w-[240px] md:w-[253px] lg:w-[340px] object-contain"
                 src={undrawSecureServerPng}
@@ -448,7 +448,7 @@ export default function Home() {
               <span className="flex justify-center md:justify-start items-end sm:h-full">
                 <Image
                   src={undrawWorldPng}
-                  className="object-contain w-[270px] lg:w-[353px] 2xl:w-[420px] mt-6"
+                  className="object-contain w-[270px] sm:w-[353px] 2xl:w-[420px] mt-6"
                   alt=""
                 />
               </span>
