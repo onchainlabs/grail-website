@@ -34,7 +34,7 @@ export default function Home() {
         {/* nav bar start / */}
         <div className="container mx-auto">
           <nav className="pt-3 relative">
-            <div className="px-4 md:px-8 lg:px-16">
+            <div className="px-4 sm:px-0 md:px-8 lg:px-16">
               <div className="relative flex h-16 items-center justify-between">
                 <div className="flex flex-shrink-0 bg-[#7659B9] items-center p-1 sm:mr-20 lg:mr-28 2xlmr-12">
                   <Link href="/">
@@ -219,7 +219,7 @@ export default function Home() {
       {/* content - 2 end  */}
       {/* content - 3 start  */}
       <div className="bg-gradient-to-b from-[#110734] to-[#443870] overflow-hidden relative">
-        <div className="sm:py-16 py-12 px-5 md:px-8 lg:px-24 container mx-auto">
+        <div className="sm:py-16 py-12 px-5 sm:px-0 md:px-8 lg:px-24 container mx-auto">
           <div className="grid lg:flex lg:gap-20 2xl:gap-40 lg:flex-row z-10 relative">
             <div className="sm:col-span-4 md:col-auto">
               <div className="lg:max-w-md lg:text-left text-center">
@@ -311,7 +311,7 @@ export default function Home() {
       {/* content - 3 end  */}
       {/* content - 4 start  */}
       <div className="bg-[#F9F8FF] relative overflow-hidden ">
-        <div className="container sm:py-24 py-20 px-5 md:px-8 lg:px-24 mx-auto">
+        <div className="container sm:py-24 py-20 px-5 sm:px-0 md:px-8 lg:px-24 mx-auto">
           <h1 className="text-[#342F42] z-10 relative sm:text-4xl text-2xl lg:text-left text-center leading-[49px] tracking-[-0.025em] font-manrope-800 font-bold">
             What makes Grail private, secure and best
           </h1>
@@ -439,16 +439,16 @@ export default function Home() {
       {/* content - 4 end  */}
       {/* content - 5 start */}
       <div className="bg-white">
-        <div className="container mx-auto sm:py-16 py-12 px-5 md:px-8 lg:px-24">
-          <div className="grid sm:grid-cols-2 sm:gap-20 lg:gap-0 gap-y-6">
-            <div className="sm:text-left text-center 2xl:w-full lg:w-4/6 sm:h-5/6 md:h-4/5 2xl:h-5/6">
-              <h1 className="text-[#342F42] lg:text-4xl md:text-[28px] 2xl:w-2/4 text-2xl tracking-[-0.025em] leading-[33px] md:leading-[38px] lg:leading-[49px] font-manrope-800 font-bold mt-3">
+        <div className="container mx-auto sm:py-16 py-12 px-5 sm:px-0 md:px-8 lg:px-24">
+          <div className="grid sm:grid-cols-2 sm:gap-10 lg:gap-0 gap-y-6">
+            <div className="sm:text-left text-center 2xl:w-full lg:w-4/5 sm:h-5/6 md:h-4/5 2xl:h-4/5">
+              <h1 className="text-[#342F42] lg:text-4xl sm:text-[28px] sm:w-5/6 2xl:w-2/4 text-2xl tracking-[-0.025em] leading-[33px] md:leading-[38px] lg:leading-[49px] font-manrope-800 font-bold mt-3">
                 Industries this will be useful for
               </h1>
               <span className="flex justify-center md:justify-start items-end sm:h-full">
                 <Image
                   src={undrawWorldPng}
-                  className="object-contain w-[270px] sm:w-[353px] 2xl:w-[420px] mt-6"
+                  className="object-contain w-[270px] sm:w-[450px] mt-6"
                   alt=""
                 />
               </span>
@@ -537,7 +537,7 @@ export default function Home() {
       {/* content - 7 start  */}
 
       <div className="bg-gradient-to-b from-[#110734] relative overflow-hidden to-[#443870]">
-        <div className="sm:py-24 py-16 px-5 md:px-8 lg:px-24 container mx-auto">
+        <div className="sm:py-24 py-16 px-5 sm:px-0 md:px-8 lg:px-24 container mx-auto">
           <div className="grid z-10 relative sm:grid-cols-2 sm:gap-4 gap-y-12">
             <div className="sm:order-none order-last">
               <div className="flex items-center">
