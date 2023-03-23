@@ -79,7 +79,7 @@ export default function Home() {
                   </ul>
                 </div>
                 <div className="absolute sm:block hidden inset-y-0 right-0 items-center sm:static sm:inset-auto sm:pr-0">
-                  <button className="bg-[#8247E5] h-10 hover:bg-violet-600 w-32 text-white font-medium">
+                  <button className="bg-[#8247E5] h-10 hover:bg-violet-600 w-32 text-white font-poppins-500 font-medium">
                     Contact
                   </button>
                 </div>
@@ -154,7 +154,7 @@ export default function Home() {
                 powered by Zero Knowledge Cryptography,that gives the privacy
                 experience you seek
               </p>
-              <button className="bg-[#8247E5] h-10 hover:bg-violet-600 sm:w-32 w-full text-white mt-8 font-medium">
+              <button className="bg-[#8247E5] h-10 hover:bg-violet-600 sm:w-32 w-full text-white mt-8 font-poppins-500 font-medium">
                 Contact Us
               </button>
             </div>
@@ -270,7 +270,7 @@ export default function Home() {
                       Dapps.
                     </p>
                   </span>
-                  <button className="bg-[#8247E5] h-10 hover:bg-violet-600 sm:w-32 w-full text-white mt-6 font-medium">
+                  <button className="bg-[#8247E5] h-10 hover:bg-violet-600 sm:w-32 w-full text-white mt-6 font-poppins-600 font-semibold">
                     Contact Us
                   </button>
                 </div>
@@ -294,7 +294,7 @@ export default function Home() {
                       secure environment for all users
                     </p>
                   </span>
-                  <button className="bg-[#8247E5] h-10 hover:bg-violet-600 sm:w-32 w-full text-white mt-6 font-medium">
+                  <button className="bg-[#8247E5] h-10 hover:bg-violet-600 sm:w-32 w-full text-white mt-6 font-poppins-600 font-semibold">
                     Contact Us
                   </button>
                 </div>
@@ -527,7 +527,7 @@ export default function Home() {
             <p className="text-[#342F42] mt-4 font-poppins-400 font-normal leading-[18px] md:leading-5 tracking-tighter">
               Contact us today to learn more and schedule a demo.
             </p>
-            <button className="bg-[#8247E5] h-10 hover:bg-violet-600 sm:w-32 w-full text-white mt-14 font-medium">
+            <button className="bg-[#8247E5] h-10 hover:bg-violet-600 sm:w-32 w-full text-white mt-14 font-poppins-600 font-semibold">
               Contact Us
             </button>
           </div>
