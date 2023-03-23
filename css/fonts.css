@@ -1,0 +1,129 @@
+@font-face {
+  font-family: "Manrope-800";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/Manrope-ExtraBold.ttf"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/Manrope-ExtraBold.ttf") format("truetype"),
+    /* IE6-IE8 */ url("../fonts/Manrope-ExtraBold.ttf") format("ttf"),
+    /* Super Modern Browsers */ url("../fonts/Manrope-ExtraBold.ttf")
+      format("truetype"),
+    /* Modern Browsers */ url("../fonts/Manrope-ExtraBold.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/Manrope-ExtraBold.ttf")
+      format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: "Manrope-700";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Manrope-Bold.ttf"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/Manrope-Bold.ttf") format("truetype"),
+    /* IE6-IE8 */ url("../fonts/Manrope-Bold.ttf") format("ttf"),
+    /* Super Modern Browsers */ url("../fonts/Manrope-Bold.ttf")
+      format("truetype"),
+    /* Modern Browsers */ url("../fonts/Manrope-Bold.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/Manrope-Bold.ttf") format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: "Manrope-600";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/Manrope-SemiBold.ttf"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/Manrope-SemiBold.ttf") format("truetype"),
+    /* IE6-IE8 */ url("../fonts/Manrope-SemiBold.ttf") format("ttf"),
+    /* Super Modern Browsers */ url("../fonts/Manrope-SemiBold.ttf")
+      format("truetype"),
+    /* Modern Browsers */ url("../fonts/Manrope-SemiBold.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/Manrope-SemiBold.ttf")
+      format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: "Manrope-500";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/Manrope-Medium.ttf"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/Manrope-Medium.ttf") format("truetype"),
+    /* IE6-IE8 */ url("../fonts/Manrope-Medium.ttf") format("ttf"),
+    /* Super Modern Browsers */ url("../fonts/Manrope-Medium.ttf")
+      format("truetype"),
+    /* Modern Browsers */ url("../fonts/Manrope-Medium.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/Manrope-Medium.ttf") format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: "Manrope-400";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Manrope-Regular.ttf"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/Manrope-Regular.ttf") format("truetype"),
+    /* IE6-IE8 */ url("../fonts/Manrope-Regular.ttf") format("ttf"),
+    /* Super Modern Browsers */ url("../fonts/Manrope-Regular.ttf")
+      format("truetype"),
+    /* Modern Browsers */ url("../fonts/Manrope-Regular.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/Manrope-Regular.ttf") format("svg"); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: "Poppins-800";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/Poppins-ExtraBold.ttf"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/Poppins-ExtraBold.ttf") format("truetype"),
+    /* IE6-IE8 */ url("../fonts/Poppins-ExtraBold.ttf") format("ttf"),
+    /* Super Modern Browsers */ url("../fonts/Poppins-ExtraBold.ttf")
+      format("truetype"),
+    /* Modern Browsers */ url("../fonts/Poppins-ExtraBold.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/Poppins-ExtraBold.ttf")
+      format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: "Poppins-700";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Poppins-Bold.ttf"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/Poppins-Bold.ttf") format("truetype"),
+    /* IE6-IE8 */ url("../fonts/Poppins-Bold.ttf") format("ttf"),
+    /* Super Modern Browsers */ url("../fonts/Poppins-Bold.ttf")
+      format("truetype"),
+    /* Modern Browsers */ url("../fonts/Poppins-Bold.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/Poppins-Bold.ttf") format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: "Poppins-600";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/Poppins-SemiBold.ttf"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/Poppins-SemiBold.ttf") format("truetype"),
+    /* IE6-IE8 */ url("../fonts/Poppins-SemiBold.ttf") format("ttf"),
+    /* Super Modern Browsers */ url("../fonts/Poppins-SemiBold.ttf")
+      format("truetype"),
+    /* Modern Browsers */ url("../fonts/Poppins-SemiBold.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/Poppins-SemiBold.ttf")
+      format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: "Poppins-500";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/Poppins-Medium.ttf"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/Poppins-Medium.ttf") format("truetype"),
+    /* IE6-IE8 */ url("../fonts/Poppins-Medium.ttf") format("ttf"),
+    /* Super Modern Browsers */ url("../fonts/Poppins-Medium.ttf")
+      format("truetype"),
+    /* Modern Browsers */ url("../fonts/Poppins-Medium.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/Poppins-Medium.ttf") format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: "Poppins-400";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Poppins-Regular.ttf"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/Poppins-Regular.ttf") format("truetype"),
+    /* IE6-IE8 */ url("../fonts/Poppins-Regular.ttf") format("ttf"),
+    /* Super Modern Browsers */ url("../fonts/Poppins-Regular.ttf")
+      format("truetype"),
+    /* Modern Browsers */ url("../fonts/Poppins-Regular.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/Poppins-Regular.ttf") format("svg"); /* Legacy iOS */
+}
