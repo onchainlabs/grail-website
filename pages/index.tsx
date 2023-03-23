@@ -1,8 +1,8 @@
 import appIcon from "../public/images/icon.png";
-import undrawSecureServerPng from "../public/images/undraw-secure-server.png";
-import undrawTeamPng from "../public/images/undraw-team.png";
-import undrawPersonalPng from "../public/images/undraw-personal.png";
-import undrawWorldPng from "../public/images/undraw-world.png";
+import undrawSecureServerPng from "../public/svg/undraw-secure-server.svg";
+import undrawTeamSvg from "../public/svg/undraw-team.svg";
+import undrawPersonalSvg from "../public/svg/undraw-personal.svg";
+import undrawWorldPng from "../public/svg/undraw-world.svg";
 import venmoLogo from "../public/images/logo/venmo-logo.png";
 import sofiLogo from "../public/images/logo/sofi-logo.png";
 import acornsLogo from "../public/images/logo/acorns-logo.png";
@@ -34,7 +34,7 @@ export default function Home() {
         {/* nav bar start / */}
         <div className="container mx-auto">
           <nav className="pt-3 relative">
-            <div className="px-6">
+            <div className="px-16">
               <div className="relative flex h-16 items-center justify-between">
                 <div className="flex flex-shrink-0 bg-[#7659B9] items-center p-1 sm:mr-20 lg:mr-28 2xlmr-12">
                   <Link href="/">
@@ -140,7 +140,7 @@ export default function Home() {
         </div>
         {/* nav bar end  */}
         {/* content - 1 start  */}
-        <div className="sm:py-24 py-20 px-5 md:px-8 lg:px-24 h-[511px] container mx-auto">
+        <div className="sm:py-24 py-20 px-5 md:px-8 lg:px-[99px] h-[511px] container mx-auto">
           <div className="grid sm:grid-cols-2 md:gap-3 lg:gap-24 2xl:gap-80 gap-y-6">
             <div className="sm:text-left text-center">
               <p className="text-[#8F8E90] font-poppins-500 uppercase text-[10px] md:text-xs tracking-[3px]">
@@ -220,13 +220,13 @@ export default function Home() {
       {/* content - 3 start  */}
       <div className="bg-gradient-to-b from-[#110734] to-[#443870] overflow-hidden relative">
         <div className="sm:py-16 py-12 px-5 md:px-8 lg:px-24 container mx-auto">
-          <div className="grid lg:flex lg:gap-20 lg:flex-row z-10 relative">
+          <div className="grid lg:flex lg:gap-20 2xl:gap-40 lg:flex-row z-10 relative">
             <div className="sm:col-span-4 md:col-auto">
               <div className="lg:max-w-md lg:text-left text-center">
                 <h1 className="text-white sm:text-3xl text-2xl font-manrope-800 font-bold">
                   Built with Users and DApps in mind
                 </h1>
-                <p className="mt-6 font-poppins-400 font-normal leading-6 tracking-tighter text-white">
+                <p className="mt-6 font-poppins-400 font-normal leading-6 tracking-[-0.04em] text-white">
                   Grail offers a decentralized and privacy-preserving compliance
                   solution which has a scope to be modular, self controllable,
                   and frictionless. Such a solution can leverage a combination
@@ -254,7 +254,7 @@ export default function Home() {
               <div className="sm:col-span-2 md:col-auto">
                 <div className="flex flex-col justify-between md:max-w-sm h-full rounded bg-white p-5">
                   <Image
-                    src={undrawTeamPng}
+                    src={undrawTeamSvg}
                     className="object-contain sm:mx-0 mx-auto h-24"
                     alt="team.png"
                   />
@@ -262,7 +262,7 @@ export default function Home() {
                     <h2 className="md:text-2xl text-[22px] font-bold font-manrope-800 leading-[33px] tracking-[-0.025em] text-[#342F42] mt-6 md:mt-0 lg:mt-6">
                       For DApps
                     </h2>
-                    <p className="text-[#342F42] font-poppins-400 font-normal leading-5 tracking-tighter mt-3">
+                    <p className="text-[#342F42] font-poppins-400 font-normal leading-[21px] tracking-[-0.04em] mt-3">
                       Dapps need to implement KYC to comply with legal and
                       regulatory requirements and mitigate reputational risks.
                       KYC helps to establish trust and transparency, attract
@@ -278,7 +278,7 @@ export default function Home() {
               <div className="sm:col-span-2 md:col-auto">
                 <div className="flex flex-col justify-between md:max-w-sm rounded bg-white p-5">
                   <Image
-                    src={undrawPersonalPng}
+                    src={undrawPersonalSvg}
                     className="object-contain sm:mx-0 mx-auto h-24"
                     alt="personal.png"
                   />
@@ -286,7 +286,7 @@ export default function Home() {
                     <h2 className="md:text-2xl text-[22px] font-bold font-manrope-800 leading-[33px] tracking-[-0.025em] text-[#342F42] mt-6">
                       For Users
                     </h2>
-                    <p className="text-[#342F42] font-poppins-400 font-normal leading-5 tracking-tighter mt-3">
+                    <p className="text-[#342F42] font-poppins-400 font-normal leading-[21px] tracking-[-0.04em] mt-3">
                       This is your chance to get priority access to a wider
                       range of Dapps and services, as well as establish trust
                       and credibility. Additionally, KYC can help to prevent
@@ -315,14 +315,14 @@ export default function Home() {
           <h1 className="text-[#342F42] z-10 relative sm:text-4xl text-2xl lg:text-left text-center leading-[49px] tracking-[-0.025em] font-manrope-800 font-bold">
             What makes Grail private, secure and best
           </h1>
-          <div className="grid lg:grid-cols-4 z-10 relative sm:grid-cols-2 sm:mt-24 mt-20 sm:gap-6 gap-y-14">
+          <div className="grid lg:grid-cols-4 z-10 relative sm:grid-cols-2 sm:mt-24 mt-20 sm:gap-8 gap-y-14">
             <div className="sm:text-left flex flex-col items-center sm:items-start text-center">
               <Image className="sm:ml-2 mx-auto" src={lockSvg} alt="lock.svg" />
               <span className="mt-4 h-full">
                 <h3 className="text-[#342F42] sm:text-xl mt-2 text-2xl leading-6 font-manrope-700 font-bold">
                   ZK-Powered KYC
                 </h3>
-                <p className="text-[#342F42] mt-3 tracking-tighter leading-5 font-normal font-poppins-400">
+                <p className="text-[#342F42] mt-3 lg:pr-4 tracking-[-0.04em] leading-[21px] font-normal font-poppins-400">
                   Dapps can securely verify customer identities without
                   collecting personal information using our ZK-powered KYC
                   solution, reducing fraud and data breach risks.
@@ -348,7 +348,7 @@ export default function Home() {
                 <h3 className="text-[#342F42] sm:text-xl mt-2 text-2xl leading-6 font-manrope-700 font-bold">
                   Sybil Resistance
                 </h3>
-                <p className="text-[#342F42] mt-3 tracking-tighter leading-5 font-normal font-poppins-400">
+                <p className="text-[#342F42] mt-3 lg:pr-4 tracking-[-0.04em] leading-[21px] font-normal font-poppins-400">
                   Our Sybil resistant solution will improve user experience of
                   Dapps by making it more democratic, fair and profitable for
                   real users.
@@ -378,7 +378,7 @@ export default function Home() {
                 <h3 className="text-[#342F42] sm:text-xl mt-2 text-2xl leading-6 font-manrope-700 font-bold">
                   Identity Management
                 </h3>
-                <p className="text-[#342F42] mt-3 tracking-tighter leading-5 font-normal font-poppins-400">
+                <p className="text-[#342F42] mt-3 lg:pr-4 tracking-[-0.04em] leading-[21px] font-normal font-poppins-400">
                   Our identity management solution helps Users manage their
                   personal identities securely and efficiently. Dapss can reduce
                   the risk of fraud and improve the user-onboarding experience.
@@ -409,7 +409,7 @@ export default function Home() {
                 <h3 className="text-[#342F42] sm:text-xl mt-2 text-2xl leading-6 font-manrope-700 font-bold">
                   Compliance
                 </h3>
-                <p className="text-[#342F42] mt-3 tracking-tighter leading-5 font-normal font-poppins-400">
+                <p className="text-[#342F42] mt-3 lg:pr-4 tracking-[-0.04em] leading-[21px] font-normal font-poppins-400">
                   Our compliance solution assists Dapps in meeting KYC and AML
                   regulations and requirements while safeguarding user’s privacy
                 </p>
@@ -442,13 +442,13 @@ export default function Home() {
         <div className="container mx-auto sm:py-16 py-12 px-5 md:px-8 lg:px-24">
           <div className="grid sm:grid-cols-2 sm:gap-20 lg:gap-0 gap-y-6">
             <div className="sm:text-left text-center 2xl:w-full lg:w-4/6 sm:h-5/6 md:h-4/5 2xl:h-5/6">
-              <h1 className="text-[#342F42] lg:text-4xl md:text-[28px] 2xl:w-2/3 text-2xl tracking-[-0.025em] leading-[33px] md:leading-[38px] lg:leading-[49px] font-manrope-800 font-bold mt-3">
-                Your quest for a secure identity ends with Grail.
+              <h1 className="text-[#342F42] lg:text-4xl md:text-[28px] 2xl:w-2/4 text-2xl tracking-[-0.025em] leading-[33px] md:leading-[38px] lg:leading-[49px] font-manrope-800 font-bold mt-3">
+                Industries this will be useful for
               </h1>
               <span className="flex justify-center md:justify-start items-end sm:h-full">
                 <Image
                   src={undrawWorldPng}
-                  className="object-contain w-[270px] lg:w-[353px] mt-6"
+                  className="object-contain w-[270px] lg:w-[353px] 2xl:w-[420px] mt-6"
                   alt=""
                 />
               </span>
@@ -458,7 +458,7 @@ export default function Home() {
                 <h1 className="sm:text-2xl text-[#342F42] text-xl font-manrope-700 leading-[29px] font-bold">
                   Defi
                 </h1>
-                <p className="text-[#342F42] text-xs lg:text-base mt-3 leading-5 tracking-tighter font-poppins-400 font-normal">
+                <p className="text-[#342F42] text-xs lg:text-base mt-3 leading-[21px] tracking-[-0.04em] font-poppins-400 font-normal">
                   Grail helps Defi applications to reduce fraud, and stay
                   compliant with regulations while opening DeFi to new user
                   groups and mass adoption..
@@ -468,7 +468,7 @@ export default function Home() {
                 <h1 className="sm:text-2xl text-[#342F42] text-xl font-manrope-700 leading-[29px] font-bold">
                   Gaming
                 </h1>
-                <p className="text-[#342F42] text-xs lg:text-base mt-3 leading-5 tracking-tighter font-poppins-400 font-normal">
+                <p className="text-[#342F42] text-xs lg:text-base mt-3 leading-[21px] tracking-[-0.04em] font-poppins-400 font-normal">
                   Spend less time on bot-proofing and improve the game mechanics
                   by making it fair for the players in your ecosystem. Reward
                   your real player with Grail.
@@ -478,7 +478,7 @@ export default function Home() {
                 <h1 className="sm:text-2xl text-[#342F42] text-xl font-manrope-700 leading-[29px] font-bold">
                   DAO
                 </h1>
-                <p className="text-[#342F42] text-xs lg:text-base mt-3 leading-5 tracking-tighter font-poppins-400 font-normal">
+                <p className="text-[#342F42] text-xs lg:text-base mt-3 leading-[21px] tracking-[-0.04em] font-poppins-400 font-normal">
                   Enable 1 person 1 vote with strong sybil resistance which
                   unlocks more native democratic uses cases in a decentralized
                   ecosystem.
@@ -488,7 +488,7 @@ export default function Home() {
                 <h1 className="sm:text-2xl text-[#342F42] text-xl font-manrope-700 leading-[29px] font-bold">
                   NFT Marketplaces
                 </h1>
-                <p className="text-[#342F42] text-xs lg:text-base mt-3 leading-5 tracking-tighter font-poppins-400 font-normal">
+                <p className="text-[#342F42] text-xs lg:text-base mt-3 leading-[21px] tracking-[-0.04em] font-poppins-400 font-normal">
                   Verify creators to avoid rugpulls/scams and erase the
                   possibility of fraud by vetting the buyers properly with
                   Grail.
@@ -498,7 +498,7 @@ export default function Home() {
                 <h1 className="sm:text-2xl text-[#342F42] text-xl font-manrope-700 leading-[29px] font-bold">
                   Grant DAO/Pools
                 </h1>
-                <p className="text-[#342F42] text-xs lg:text-base mt-3 leading-5 tracking-tighter font-poppins-400 font-normal">
+                <p className="text-[#342F42] text-xs lg:text-base mt-3 leading-[21px] tracking-[-0.04em] font-poppins-400 font-normal">
                   Avoid regulatory scrutiny and limit payouts to trusted members
                   with Grail
                 </p>
@@ -507,7 +507,7 @@ export default function Home() {
                 <h1 className="sm:text-2xl text-[#342F42] text-xl font-manrope-700 leading-[29px] font-bold">
                   Airdrop
                 </h1>
-                <p className="text-[#342F42] text-xs lg:text-base mt-3 leading-5 tracking-tighter font-poppins-400 font-normal">
+                <p className="text-[#342F42] text-xs lg:text-base mt-3 leading-[21px] tracking-[-0.04em] font-poppins-400 font-normal">
                   Identify and reward real supporters in your airdrop campaign.
                   Avoid Sybil attacks with grail and create a fair ecosystem.
                 </p>
@@ -524,7 +524,7 @@ export default function Home() {
             <h1 className="text-[#342F42] sm:text-[32px] text-2xl tracking-[-0.025em] leading-[32.78px] lg:leading-[44px] font-manrope-800 font-bold mt-3">
               Ready to experience the benefits of our ZK-powered KYC solution?
             </h1>
-            <p className="text-[#342F42] mt-4 font-poppins-400 font-normal leading-[18px] md:leading-5 tracking-tighter">
+            <p className="text-[#342F42] mt-4 font-poppins-400 font-normal leading-[18px] md:leading-[21px] tracking-[-0.04em]">
               Contact us today to learn more and schedule a demo.
             </p>
             <button className="bg-[#8247E5] h-10 hover:bg-violet-600 sm:w-32 w-full text-white mt-14 font-poppins-600 font-semibold">
