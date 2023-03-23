@@ -35,7 +35,7 @@ export default function Home() {
         <div className="container mx-auto">
           <nav className="pt-4 lg:pt-8 relative">
             <div className="px-4 sm:px-0 md:px-8 lg:px-16">
-              <div className="relative flex h-16 items-center justify-between">
+              <div className="relative flex items-center justify-between">
                 <div className="flex flex-shrink-0 bg-[#7659B9] items-center p-1 sm:mr-20 lg:mr-28 2xlmr-12">
                   <Link href="/">
                     <Image
@@ -149,12 +149,12 @@ export default function Home() {
               <h1 className="text-[#342F42] font-manrope-800 tracking-[-0.025em] leading-[38px] md:leading-[44px] lg:leading-[57px] md:text-[32px] lg:text-[42px] text-[28px] font-bold mt-2">
                 Your quest for a secure identity ends with Grail.
               </h1>
-              <p className="mt-7 font-poppins-400 text-xs md:text-sm lg:text-base">
+              <p className="mt-6 lg:mt-7 font-poppins-400 text-xs md:text-sm lg:text-base">
                 Grail is a chain-agnostic and reusable one-click KYC solution
                 powered by Zero Knowledge Cryptography,that gives the privacy
                 experience you seek
               </p>
-              <button className="bg-[#8247E5] h-10 hover:bg-violet-600 sm:w-32 w-full text-white mt-8 font-poppins-500 font-medium">
+              <button className="bg-[#8247E5] h-10 hover:bg-violet-600 sm:w-32 w-full text-white mt-[42px] sm:mt-7 font-poppins-500 font-medium">
                 Contact Us
               </button>
             </div>
