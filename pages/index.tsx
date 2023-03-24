@@ -8,6 +8,7 @@ import sofiLogo from "../public/images/logo/sofi-logo.png";
 import acornsLogo from "../public/images/logo/acorns-logo.png";
 import betterMentLogo from "../public/images/logo/betterment-logo.png";
 import chimeLogo from "../public/images/logo/chime-logo.png";
+import sybilIcon from "../public/svg/sybil.svg";
 import lockSvg from "../public/svg/lock.svg";
 import identitySvg from "../public/svg/identity.svg";
 import complianceSvg from "../public/svg/compliance.svg";
@@ -338,7 +339,11 @@ export default function Home() {
               </span>
             </div>
             <div className="sm:text-left flex flex-col items-center sm:items-start text-center">
-              <Image className="sm:ml-0 mx-auto" src={lockSvg} alt="lock.svg" />
+              <Image
+                className="sm:ml-0 mx-auto"
+                src={sybilIcon}
+                alt="lock.svg"
+              />
               <span className="mt-4 h-full relative">
                 <h3 className="text-[#342F42] sm:text-xl mt-2 text-2xl leading-6 font-manrope-700 font-bold">
                   Sybil Resistance
