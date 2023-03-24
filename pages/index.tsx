@@ -79,13 +79,10 @@ export default function Home() {
                   </ul>
                 </div>
                 <div className="absolute sm:block hidden inset-y-0 right-0 items-center sm:static sm:inset-auto sm:pr-0">
-                  <button
-                    onClick={() =>
-                      router.push("https://cal.com/prasanna/grail")
-                    }
-                    className="bg-[#8247E5] h-10 hover:bg-violet-600 w-32 text-white font-poppins-500 font-medium"
-                  >
-                    Contact
+                  <button className="bg-[#8247E5] h-10 hover:bg-violet-600 w-32 text-white font-poppins-500 font-medium">
+                    <Link target="_blank" href="https://cal.com/prasanna/grail">
+                      Contact
+                    </Link>
                   </button>
                 </div>
                 <div className="flex items-center sm:hidden">
@@ -159,12 +156,11 @@ export default function Home() {
                 powered by Zero Knowledge Cryptography,that gives the privacy
                 experience you seek
               </p>
-              <button
-                onClick={() => router.push("https://cal.com/prasanna/grail")}
-                className="bg-[#8247E5] h-10 hover:bg-violet-600 sm:w-32 w-full text-white mt-[42px] sm:mt-7 font-poppins-500 font-medium"
-              >
-                Contact Us
-              </button>
+              <Link target="_blank" href="https://cal.com/prasanna/grail">
+                <button className="bg-[#8247E5] h-10 hover:bg-violet-600 sm:w-32 w-full text-white mt-6 font-poppins-600 font-semibold">
+                  Contact Us
+                </button>
+              </Link>
             </div>
             <div className="flex items-center justify-center sm:justify-end md:ml-5">
               <Image
@@ -277,14 +273,11 @@ export default function Home() {
                       requirements
                     </p>
                   </span>
-                  <button
-                    onClick={() =>
-                      router.push("https://cal.com/prasanna/grail")
-                    }
-                    className="bg-[#8247E5] h-10 hover:bg-violet-600 sm:w-32 w-full text-white mt-6 font-poppins-600 font-semibold"
-                  >
-                    Contact Us
-                  </button>
+                  <Link target="_blank" href="https://cal.com/prasanna/grail">
+                    <button className="bg-[#8247E5] h-10 hover:bg-violet-600 sm:w-32 w-full text-white mt-6 font-poppins-600 font-semibold">
+                      Contact Us
+                    </button>
+                  </Link>
                 </div>
               </div>
               <div className="sm:col-span-2 md:col-auto">
@@ -307,14 +300,11 @@ export default function Home() {
                       interactions
                     </p>
                   </span>
-                  <button
-                    onClick={() =>
-                      router.push("https://cal.com/prasanna/grail")
-                    }
-                    className="bg-[#8247E5] h-10 hover:bg-violet-600 sm:w-32 w-full text-white mt-6 font-poppins-600 font-semibold"
-                  >
-                    Contact Us
-                  </button>
+                  <Link target="_blank" href="https://cal.com/prasanna/grail">
+                    <button className="bg-[#8247E5] h-10 hover:bg-violet-600 sm:w-32 w-full text-white mt-6 font-poppins-600 font-semibold">
+                      Contact Us
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -570,12 +560,11 @@ export default function Home() {
             <p className="text-[#342F42] mt-4 font-poppins-400 font-normal leading-[18px] md:leading-[21px] tracking-[-0.04em]">
               Contact us today to learn more and schedule a demo.
             </p>
-            <button
-              onClick={() => router.push("https://cal.com/prasanna/grail")}
-              className="bg-[#8247E5] h-10 hover:bg-violet-600 sm:w-32 w-full text-white mt-14 font-poppins-600 font-semibold"
-            >
-              Contact Us
-            </button>
+            <Link target="_blank" href="https://cal.com/prasanna/grail">
+              <button className="bg-[#8247E5] h-10 hover:bg-violet-600 sm:w-32 w-full text-white mt-6 font-poppins-600 font-semibold">
+                Contact Us
+              </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -646,7 +635,7 @@ export default function Home() {
                     alt="social.png"
                   />
                 </Link>
-                <Link href="https://twitter.com/grailxyz">
+                <Link target="_blank" href="https://twitter.com/grailxyz">
                   <Image
                     className="object-contain"
                     src={twitterSvg}
