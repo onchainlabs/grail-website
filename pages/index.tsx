@@ -73,13 +73,18 @@ export default function Home() {
                         href="#"
                         className="px-3 py-2 hover:text-slate-900  font-medium"
                       >
-                        Blog
+                        Litepaper
                       </Link>
                     </li>
                   </ul>
                 </div>
                 <div className="absolute sm:block hidden inset-y-0 right-0 items-center sm:static sm:inset-auto sm:pr-0">
-                  <button className="bg-[#8247E5] h-10 hover:bg-violet-600 w-32 text-white font-poppins-500 font-medium">
+                  <button
+                    onClick={() =>
+                      router.push("https://cal.com/prasanna/grail")
+                    }
+                    className="bg-[#8247E5] h-10 hover:bg-violet-600 w-32 text-white font-poppins-500 font-medium"
+                  >
                     Contact
                   </button>
                 </div>
@@ -132,7 +137,7 @@ export default function Home() {
                   href="/"
                   className="text-[#8F8E90] font-poppins-500 hover:text-slate-900 font-medium"
                 >
-                  Blog
+                  Litepaper
                 </Link>
               </div>
             </div>
@@ -143,9 +148,9 @@ export default function Home() {
         <div className="sm:py-24 py-20 px-5 sm:px-0 md:px-8 lg:px-[99px] h-[511px] container mx-auto">
           <div className="grid sm:grid-cols-2 md:gap-3 lg:gap-24 2xl:gap-80 gap-y-6">
             <div className="sm:text-left text-center">
-              <p className="text-[#8F8E90] font-poppins-500 uppercase sm:-mr-7 text-[10px] md:text-xs tracking-[3px]">
+              {/* <p className="text-[#8F8E90] font-poppins-500 uppercase sm:-mr-7 text-[10px] md:text-xs tracking-[3px]">
                 Reputation & contributor management
-              </p>
+              </p> */}
               <h1 className="text-[#342F42] font-manrope-800 tracking-[-0.025em] leading-[38px] md:leading-[44px] lg:leading-[57px] md:text-[32px] lg:text-[42px] text-[28px] font-bold mt-2">
                 Your quest for a secure identity ends with Grail.
               </h1>
@@ -154,7 +159,10 @@ export default function Home() {
                 powered by Zero Knowledge Cryptography,that gives the privacy
                 experience you seek
               </p>
-              <button className="bg-[#8247E5] h-10 hover:bg-violet-600 sm:w-32 w-full text-white mt-[42px] sm:mt-7 font-poppins-500 font-medium">
+              <button
+                onClick={() => router.push("https://cal.com/prasanna/grail")}
+                className="bg-[#8247E5] h-10 hover:bg-violet-600 sm:w-32 w-full text-white mt-[42px] sm:mt-7 font-poppins-500 font-medium"
+              >
                 Contact Us
               </button>
             </div>
@@ -170,7 +178,7 @@ export default function Home() {
         {/* content - 1 end  */}
       </div>
       {/* content - 2 start  */}
-      <div className="my-8 bg-white">
+      {/* <div className="my-8 bg-white">
         <div className="container mx-auto">
           <div className="flex flex-col items-center justify-center">
             <h2 className="text-[#8F8E90] text-lg font-semibold font-poppins-600">
@@ -215,7 +223,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* content - 2 end  */}
       {/* content - 3 start  */}
       <div className="bg-gradient-to-b from-[#110734] to-[#443870] overflow-hidden relative">
@@ -224,16 +232,14 @@ export default function Home() {
             <div className="sm:col-span-4 md:col-auto">
               <div className="lg:max-w-md lg:text-left text-center">
                 <h1 className="text-white sm:text-3xl text-2xl font-manrope-800 font-bold">
-                  Built with Users and DApps in mind
+                  Building Trust between Dapps and Users
                 </h1>
                 <p className="mt-6 font-poppins-400 font-normal text-base leading-6 tracking-[-0.04em] text-white">
-                  Grail offers a decentralized and privacy-preserving compliance
-                  solution which has a scope to be modular, self controllable,
-                  and frictionless. Such a solution can leverage a combination
-                  of sovereign IDs, off-chain reputation and On-chain data to
-                  open up a whole new world of possibilities in the web3 world.
+                  Grail enables Dapps and users to create trust rails using
+                  privacy preserving technology such as Zero Knowledge
+                  Cryptography.
                 </p>
-                <div className="flex lg:justify-start justify-center mt-6 text-white">
+                {/* <div className="flex lg:justify-start justify-center mt-6 text-white">
                   <Link
                     className="text-lg w-fit font-poppins-600 font-semibold flex hover:text-violet-600 md:justify-start justify-center items-center"
                     href="/"
@@ -247,7 +253,7 @@ export default function Home() {
                       />
                     </span>
                   </Link>
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="grid mt-11 lg:mt-0 grid-rows-1 sm:grid-cols-4 md:grid-cols-2 gap-8">
@@ -263,14 +269,20 @@ export default function Home() {
                       For DApps
                     </h2>
                     <p className="text-[#342F42] font-poppins-400 font-normal text-sm leading-[21px] tracking-[-0.04em] mt-3">
-                      Dapps need to implement KYC to comply with legal and
-                      regulatory requirements and mitigate reputational risks.
-                      KYC helps to establish trust and transparency, attract
-                      institutional investors, and promote wider adoption of
-                      Dapps.
+                      Using Know Your Customer solutions, Dapps can expand their
+                      knowhow about their community and users, and set relevant
+                      guardrails for participation. This helps Dapps secure
+                      their network and create a more rewarding and trusted
+                      system for their customers and also comply with regulatory
+                      requirements
                     </p>
                   </span>
-                  <button className="bg-[#8247E5] h-10 hover:bg-violet-600 sm:w-32 w-full text-white mt-6 font-poppins-600 font-semibold">
+                  <button
+                    onClick={() =>
+                      router.push("https://cal.com/prasanna/grail")
+                    }
+                    className="bg-[#8247E5] h-10 hover:bg-violet-600 sm:w-32 w-full text-white mt-6 font-poppins-600 font-semibold"
+                  >
                     Contact Us
                   </button>
                 </div>
@@ -287,14 +299,20 @@ export default function Home() {
                       For Users
                     </h2>
                     <p className="text-[#342F42] font-poppins-400 font-normal text-sm leading-[21px] tracking-[-0.04em] mt-3">
-                      This is your chance to get priority access to a wider
-                      range of Dapps and services, as well as establish trust
-                      and credibility. Additionally, KYC can help to prevent
-                      fraud and illegal activities, ensuring a safer and more
-                      secure environment for all users
+                      Grail Identity platform and private wallets will allow
+                      users the most private and secure way to control their
+                      interactions with Dapps. Users can control what
+                      information is shared with which Dapp in the most private
+                      way possible and feel completely secure about the
+                      interactions
                     </p>
                   </span>
-                  <button className="bg-[#8247E5] h-10 hover:bg-violet-600 sm:w-32 w-full text-white mt-6 font-poppins-600 font-semibold">
+                  <button
+                    onClick={() =>
+                      router.push("https://cal.com/prasanna/grail")
+                    }
+                    className="bg-[#8247E5] h-10 hover:bg-violet-600 sm:w-32 w-full text-white mt-6 font-poppins-600 font-semibold"
+                  >
                     Contact Us
                   </button>
                 </div>
@@ -313,64 +331,38 @@ export default function Home() {
       <div className="bg-[#F9F8FF] relative overflow-hidden ">
         <div className="container sm:py-24 py-20 px-5 sm:px-0 md:px-8 lg:px-24 mx-auto">
           <h1 className="text-[#342F42] z-10 relative sm:text-4xl text-2xl lg:text-left text-center leading-[49px] tracking-[-0.025em] font-manrope-800 font-bold">
-            What makes Grail private, secure and best
+            Built with Privacy and Security at its core
           </h1>
           <div className="grid lg:grid-cols-4 z-10 relative sm:grid-cols-2 sm:mt-24 mt-20 sm:gap-8 gap-y-14">
             <div className="sm:text-left flex flex-col items-center sm:items-start text-center">
-              <Image className="sm:ml-2 mx-auto" src={lockSvg} alt="lock.svg" />
+              <Image className="sm:ml-0 mx-auto" src={lockSvg} alt="lock.svg" />
               <span className="mt-4 h-full">
                 <h3 className="text-[#342F42] sm:text-xl mt-2 text-2xl leading-6 font-manrope-700 font-bold">
                   ZK-Powered KYC
                 </h3>
                 <p className="text-[#342F42] mt-3 lg:pr-4 tracking-[-0.04em] leading-[21px] font-normal font-poppins-400">
                   Dapps can securely verify customer identities without
-                  collecting personal information using our ZK-powered KYC
+                  collecting personal information using Grail’s ZK-powered KYC
                   solution, reducing fraud and data breach risks.
                 </p>
               </span>
-              <Link
-                className="text-lg w-fit text-[#8247E5] hover:text-violet-700 font-poppins-600 font-semibold mt-3 flex sm:justify-start justify-center items-center"
-                href="/"
-              >
-                Know more{" "}
-                <span className="ml-3 mt-0.5 font-medium">
-                  <Image
-                    src={RightArrowPurple}
-                    className="object-contain sm:mx-0 mx-auto"
-                    alt="team.png"
-                  />
-                </span>
-              </Link>
             </div>
             <div className="sm:text-left flex flex-col items-center sm:items-start text-center">
-              <Image className="sm:ml-2 mx-auto" src={lockSvg} alt="lock.svg" />
+              <Image className="sm:ml-0 mx-auto" src={lockSvg} alt="lock.svg" />
               <span className="mt-4 h-full relative">
                 <h3 className="text-[#342F42] sm:text-xl mt-2 text-2xl leading-6 font-manrope-700 font-bold">
                   Sybil Resistance
                 </h3>
                 <p className="text-[#342F42] mt-3 lg:pr-4 tracking-[-0.04em] leading-[21px] font-normal font-poppins-400">
-                  Our Sybil resistant solution will improve user experience of
-                  Dapps by making it more democratic, fair and profitable for
-                  real users.
+                  Grail’s Sybil resistance solution will improve user experience
+                  of Dapps by making it more democratic, fair and rewarding for
+                  genuine users and community members
                 </p>
               </span>
-              <Link
-                className="text-lg  w-fit text-[#8247E5] hover:text-violet-700 font-poppins-600 font-semibold mt-3 flex sm:justify-start justify-center items-center"
-                href="/"
-              >
-                Know more{" "}
-                <span className="ml-3 mt-0.5 font-medium">
-                  <Image
-                    src={RightArrowPurple}
-                    className="object-contain sm:mx-0 mx-auto"
-                    alt="team.png"
-                  />
-                </span>
-              </Link>
             </div>
             <div className="sm:text-left flex flex-col justify-between items-center sm:items-start text-center">
               <Image
-                className="sm:ml-2 mx-auto"
+                className="sm:ml-0 mx-auto"
                 src={identitySvg}
                 alt="lock.svg"
               />
@@ -379,29 +371,15 @@ export default function Home() {
                   Identity Management
                 </h3>
                 <p className="text-[#342F42] mt-3 lg:pr-4 tracking-[-0.04em] leading-[21px] font-normal font-poppins-400">
-                  Our identity management solution helps Users manage their
-                  personal identities securely and efficiently. Dapss can reduce
-                  the risk of fraud and improve the user-onboarding experience.
-                  Compliance
+                  Our identity management solution helps users manage personal
+                  identities privately and securely. Dapps can reduce the risk
+                  of fraud and provide a seamless user-onboarding experience
                 </p>
               </span>
-              <Link
-                className="text-lg w-fit text-[#8247E5] hover:text-violet-700 font-poppins-600 font-semibold mt-3 flex sm:justify-start justify-center items-center"
-                href="/"
-              >
-                Know more{" "}
-                <span className="ml-3 mt-0.5 font-medium">
-                  <Image
-                    src={RightArrowPurple}
-                    className="object-contain sm:mx-0 mx-auto"
-                    alt="team.png"
-                  />
-                </span>
-              </Link>
             </div>
             <div className="sm:text-left flex flex-col justify-between items-center sm:items-start text-center">
               <Image
-                className="sm:ml-2 mx-auto"
+                className="sm:ml-0 mx-auto"
                 src={complianceSvg}
                 alt="lock.svg"
               />
@@ -411,22 +389,9 @@ export default function Home() {
                 </h3>
                 <p className="text-[#342F42] mt-3 lg:pr-4 tracking-[-0.04em] leading-[21px] font-normal font-poppins-400">
                   Our compliance solution assists Dapps in meeting KYC and AML
-                  regulations and requirements while safeguarding user’s privacy
+                  regulations without sacrificing the privacy primitives of web3
                 </p>
               </span>
-              <Link
-                className="text-lg md:absolute md:bottom-0 w-fit text-[#8247E5] hover:text-violet-700 font-poppins-600 font-semibold mt-3 flex sm:justify-start justify-center items-center"
-                href="/"
-              >
-                Know more{" "}
-                <span className="ml-3 mt-0.5 font-medium">
-                  <Image
-                    src={RightArrowPurple}
-                    className="object-contain sm:mx-0 mx-auto"
-                    alt="team.png"
-                  />
-                </span>
-              </Link>
             </div>
           </div>
         </div>
@@ -443,7 +408,7 @@ export default function Home() {
           <div className="grid sm:grid-cols-2 sm:gap-10 lg:gap-0 gap-y-6">
             <div className="sm:text-left text-center 2xl:w-full lg:w-4/5 sm:h-5/6 md:h-4/5 2xl:h-4/5">
               <h1 className="text-[#342F42] lg:text-4xl sm:text-[28px] sm:w-5/6 2xl:w-2/4 text-2xl tracking-[-0.025em] leading-[33px] md:leading-[38px] lg:leading-[49px] font-manrope-800 font-bold mt-3">
-                Industries this will be useful for
+                Powering Web3 ecosystems
               </h1>
               <span className="flex justify-center md:justify-start items-end sm:h-full">
                 <Image
@@ -454,7 +419,7 @@ export default function Home() {
               </span>
             </div>
             <div className="grid sm:grid-cols-2 gap-4 sm:gap-[47px] lg:gap-14 gap-y-12">
-              <div className="bg-[#F9F8FF] sm:bg-transparent flex flex-col sm:p-0 p-16 sm:justify-start justify-center sm:text-left text-center sm:items-start items-center">
+              <div className="bg-[#F9F8FF] relative sm:bg-transparent flex flex-col sm:p-0 p-16 justify-between sm:text-left text-center sm:items-start items-center">
                 <h1 className="sm:text-2xl text-[#342F42] text-xl font-manrope-700 leading-[29px] font-bold">
                   Defi
                 </h1>
@@ -463,8 +428,21 @@ export default function Home() {
                   compliant with regulations while opening DeFi to new user
                   groups and mass adoption..
                 </p>
+                {/* <Link
+                  className="text-lg w-fit text-[#8247E5] hover:text-violet-700 font-poppins-600 font-semibold mt-3 flex sm:justify-start justify-center items-center"
+                  href="/"
+                >
+                  Know more{" "}
+                  <span className="ml-3 mt-0.5 font-medium">
+                    <Image
+                      src={RightArrowPurple}
+                      className="object-contain sm:mx-0 mx-auto"
+                      alt="team.png"
+                    />
+                  </span>
+                </Link> */}
               </div>
-              <div className="bg-[#F9F8FF] sm:bg-transparent flex flex-col sm:p-0 p-16  sm:justify-start justify-center sm:text-left text-center sm:items-start items-center">
+              <div className="bg-[#F9F8FF] relative sm:bg-transparent flex flex-col sm:p-0 p-16 justify-start sm:text-left text-center sm:items-start items-center">
                 <h1 className="sm:text-2xl text-[#342F42] text-xl font-manrope-700 leading-[29px] font-bold">
                   Gaming
                 </h1>
@@ -473,8 +451,21 @@ export default function Home() {
                   by making it fair for the players in your ecosystem. Reward
                   your real player with Grail.
                 </p>
+                {/* <Link
+                  className="text-lg w-fit text-[#8247E5] hover:text-violet-700 font-poppins-600 font-semibold mt-3 flex sm:justify-start justify-center items-center"
+                  href="/"
+                >
+                  Know more{" "}
+                  <span className="ml-3 mt-0.5 font-medium">
+                    <Image
+                      src={RightArrowPurple}
+                      className="object-contain sm:mx-0 mx-auto"
+                      alt="team.png"
+                    />
+                  </span>
+                </Link> */}
               </div>
-              <div className="bg-[#F9F8FF] sm:bg-transparent flex flex-col sm:p-0 p-16  sm:justify-start justify-center sm:text-left text-center sm:items-start items-center">
+              <div className="bg-[#F9F8FF] relative sm:bg-transparent flex flex-col sm:p-0 p-16 justify-start sm:text-left text-center sm:items-start items-center">
                 <h1 className="sm:text-2xl text-[#342F42] text-xl font-manrope-700 leading-[29px] font-bold">
                   DAO
                 </h1>
@@ -483,8 +474,21 @@ export default function Home() {
                   unlocks more native democratic uses cases in a decentralized
                   ecosystem.
                 </p>
+                {/* <Link
+                  className="text-lg w-fit text-[#8247E5] hover:text-violet-700 font-poppins-600 font-semibold mt-3 flex sm:justify-start justify-center items-center"
+                  href="/"
+                >
+                  Know more{" "}
+                  <span className="ml-3 mt-0.5 font-medium">
+                    <Image
+                      src={RightArrowPurple}
+                      className="object-contain sm:mx-0 mx-auto"
+                      alt="team.png"
+                    />
+                  </span>
+                </Link> */}
               </div>
-              <div className="bg-[#F9F8FF] sm:bg-transparent flex flex-col sm:p-0 p-16  sm:justify-start justify-center sm:text-left text-center sm:items-start items-center">
+              <div className="bg-[#F9F8FF] relative sm:bg-transparent flex flex-col sm:p-0 p-16 justify-start sm:text-left text-center sm:items-start items-center">
                 <h1 className="sm:text-2xl text-[#342F42] text-xl font-manrope-700 leading-[29px] font-bold">
                   NFT Marketplaces
                 </h1>
@@ -493,8 +497,21 @@ export default function Home() {
                   possibility of fraud by vetting the buyers properly with
                   Grail.
                 </p>
+                {/* <Link
+                  className="text-lg w-fit text-[#8247E5] hover:text-violet-700 font-poppins-600 font-semibold mt-3 flex sm:justify-start justify-center items-center"
+                  href="/"
+                >
+                  Know more{" "}
+                  <span className="ml-3 mt-0.5 font-medium">
+                    <Image
+                      src={RightArrowPurple}
+                      className="object-contain sm:mx-0 mx-auto"
+                      alt="team.png"
+                    />
+                  </span>
+                </Link> */}
               </div>
-              <div className="bg-[#F9F8FF] sm:bg-transparent flex flex-col sm:p-0 p-16  sm:justify-start justify-center sm:text-left text-center sm:items-start items-center">
+              <div className="bg-[#F9F8FF] relative sm:bg-transparent flex flex-col sm:p-0 p-16 justify-start sm:text-left text-center sm:items-start items-center">
                 <h1 className="sm:text-2xl text-[#342F42] text-xl font-manrope-700 leading-[29px] font-bold">
                   Grant DAO/Pools
                 </h1>
@@ -502,8 +519,21 @@ export default function Home() {
                   Avoid regulatory scrutiny and limit payouts to trusted members
                   with Grail
                 </p>
+                {/* <Link
+                  className="text-lg w-fit text-[#8247E5] hover:text-violet-700 font-poppins-600 font-semibold mt-3 flex sm:justify-start justify-center items-center"
+                  href="/"
+                >
+                  Know more{" "}
+                  <span className="ml-3 mt-0.5 font-medium">
+                    <Image
+                      src={RightArrowPurple}
+                      className="object-contain sm:mx-0 mx-auto"
+                      alt="team.png"
+                    />
+                  </span>
+                </Link> */}
               </div>
-              <div className="bg-[#F9F8FF] sm:bg-transparent flex flex-col sm:p-0 p-16  sm:justify-start justify-center sm:text-left text-center sm:items-start items-center">
+              <div className="bg-[#F9F8FF] relative sm:bg-transparent flex flex-col sm:p-0 p-16 justify-start sm:text-left text-center sm:items-start items-center">
                 <h1 className="sm:text-2xl text-[#342F42] text-xl font-manrope-700 leading-[29px] font-bold">
                   Airdrop
                 </h1>
@@ -511,6 +541,19 @@ export default function Home() {
                   Identify and reward real supporters in your airdrop campaign.
                   Avoid Sybil attacks with grail and create a fair ecosystem.
                 </p>
+                {/* <Link
+                  className="text-lg w-fit text-[#8247E5] hover:text-violet-700 font-poppins-600 font-semibold mt-3 flex sm:justify-start justify-center items-center"
+                  href="/"
+                >
+                  Know more{" "}
+                  <span className="ml-3 mt-0.5 font-medium">
+                    <Image
+                      src={RightArrowPurple}
+                      className="object-contain sm:mx-0 mx-auto"
+                      alt="team.png"
+                    />
+                  </span>
+                </Link> */}
               </div>
             </div>
           </div>
@@ -527,7 +570,10 @@ export default function Home() {
             <p className="text-[#342F42] mt-4 font-poppins-400 font-normal leading-[18px] md:leading-[21px] tracking-[-0.04em]">
               Contact us today to learn more and schedule a demo.
             </p>
-            <button className="bg-[#8247E5] h-10 hover:bg-violet-600 sm:w-32 w-full text-white mt-14 font-poppins-600 font-semibold">
+            <button
+              onClick={() => router.push("https://cal.com/prasanna/grail")}
+              className="bg-[#8247E5] h-10 hover:bg-violet-600 sm:w-32 w-full text-white mt-14 font-poppins-600 font-semibold"
+            >
               Contact Us
             </button>
           </div>
@@ -553,11 +599,11 @@ export default function Home() {
                 </h1>
               </div>
               <p className="text-white w-3/4 md:w-2/3 lg:w-5/12 mt-4">
-                Your quest for a secure identity end with Grail
+                Your quest for a secure identity ends with Grail
               </p>
             </div>
             <div>
-              <div className="grid sm:grid-cols-3 grid-cols-2 sm:gap-4 gap-x-20  gap-y-6">
+              {/* <div className="grid sm:grid-cols-3 grid-cols-2 sm:gap-4 gap-x-20  gap-y-6">
                 <div className="text-white flex flex-col leading-8">
                   <Link className="hover:text-violet-600 w-fit" href="/">
                     About
@@ -591,34 +637,34 @@ export default function Home() {
                     Careers
                   </Link>
                 </div>
+              </div> */}
+              <div className="flex gap-6 sm:justify-start justify-center">
+                <Link className="m-0 sm:ml-auto" href="/">
+                  <Image
+                    className="object-contain"
+                    src={socialIconSvg}
+                    alt="social.png"
+                  />
+                </Link>
+                <Link href="https://twitter.com/grailxyz">
+                  <Image
+                    className="object-contain"
+                    src={twitterSvg}
+                    alt="twitter.png"
+                  />
+                </Link>
+                <Link
+                  className="m-0 2xl:mr-36 xl:mr-28 lg:mr-24 md:mr-12 sm:mr-11"
+                  href="/"
+                >
+                  <Image
+                    className="object-contain"
+                    src={linkDinIconSvg}
+                    alt="link-din.png"
+                  />
+                </Link>
               </div>
             </div>
-          </div>
-          <div className="flex gap-6 sm:justify-start justify-center mt-8">
-            <Link className="m-0 sm:ml-auto" href="/">
-              <Image
-                className="object-contain"
-                src={socialIconSvg}
-                alt="social.png"
-              />
-            </Link>
-            <Link href="/">
-              <Image
-                className="object-contain"
-                src={twitterSvg}
-                alt="twitter.png"
-              />
-            </Link>
-            <Link
-              className="m-0 2xl:mr-36 xl:mr-28 lg:mr-24 md:mr-12 sm:mr-11"
-              href="/"
-            >
-              <Image
-                className="object-contain"
-                src={linkDinIconSvg}
-                alt="link-din.png"
-              />
-            </Link>
           </div>
         </div>
         {/* rounded circle border start*/}
