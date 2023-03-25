@@ -579,7 +579,7 @@ export default function Home() {
       <div className="bg-gradient-to-b from-[#110734] relative overflow-hidden to-[#443870]">
         <div className="sm:py-24 py-16 px-5 sm:px-0 md:px-8 lg:px-24 container mx-auto">
           <div className="grid z-10 relative sm:grid-cols-2 sm:gap-4 gap-y-12">
-            <div className="sm:order-none order-last">
+            <div className="sm:order-none order-first">
               <div className="flex items-center">
                 <Link href="/">
                   <Image
