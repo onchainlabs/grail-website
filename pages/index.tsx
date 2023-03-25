@@ -70,7 +70,7 @@ export default function Home() {
                     </li>
                     <li
                       className={
-                        router.pathname == "/"
+                        router.pathname == "/litepaper"
                           ? "text-slate-900"
                           : "text-[#8F8E90]"
                       }
@@ -125,7 +125,7 @@ export default function Home() {
             {/* mobile screen  */}
             <div
               id="sidenav"
-              className={`fixed top-0 right-0 z-[1035] w-60 overflow-hidden bg-white shadow-[0_4px_12px_0_rgba(0,0,0,0.07),_0_2px_4px_rgba(0,0,0,0.05)] transition-transform duration-300 ease-in-out${
+              className={`fixed h-screen top-0 right-0 z-[1035] w-60 overflow-hidden bg-white shadow-[0_4px_12px_0_rgba(0,0,0,0.07),_0_2px_4px_rgba(0,0,0,0.05)] transition-transform duration-300 ease-in-out${
                 showMobileSidebar
                   ? "transform translate-x-0"
                   : "transform translate-x-full"
@@ -135,7 +135,7 @@ export default function Home() {
               data-te-sidenav-right="true"
             >
               <ul
-                className="relative flex flex-col justify-between w-full m-0 h-screen list-none"
+                className="relative flex flex-col justify-between w-full m-0 h-full list-none"
                 data-te-sidenav-menu-ref
               >
                 <div>
@@ -152,32 +152,40 @@ export default function Home() {
                   </span>
                   {/* </li> */}
                   <hr className="h-px mb-8 bg-gray-200 border-0 dark:bg-gray-700" />
-                  <li className="relative mb-4">
+                  <li
+                    className={`relative mb-4 ${
+                      router.pathname == "/" && "bg-violet-50"
+                    }`}
+                  >
                     <Link
                       href="/"
                       data-te-sidenav-link-ref
-                      className="flex h-5 gap-3 items-center truncate rounded-[5px] py-4 px-3 text-[0.875rem] text-violet-600 outline-none transition duration-300 ease-linear hover:bg-violet-50 hover:text-inherit hover:outline-none focus:bg-violet-50 focus:text-inherit focus:outline-none active:bg-violet-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none font-poppins-500 hover:text-violet-100 font-medium"
+                      className="flex h-5 gap-3 items-center truncate rounded-[5px] py-4 px-3 text-base text-violet-600 outline-none transition duration-300 ease-linear hover:bg-violet-50 hover:text-inherit hover:outline-none focus:bg-violet-50 focus:text-inherit focus:outline-none data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none font-poppins-500 hover:text-violet-100 font-medium"
                     >
-                      <House />
+                      <House className="font-bold" />
                       Home
                     </Link>
                   </li>
-                  <li className="relative">
+                  <li
+                    className={`relative ${
+                      router.pathname == "/litepaper" && "bg-violet-50"
+                    }`}
+                  >
                     <Link
-                      href="/"
+                      href="/litepaper"
                       data-te-sidenav-link-ref
-                      className="flex h-5 gap-3 items-center truncate rounded-[5px] py-4 px-3 text-[0.875rem] text-violet-600 outline-none transition duration-300 ease-linear hover:bg-violet-50 hover:text-inherit hover:outline-none focus:bg-violet-50 focus:text-inherit focus:outline-none active:bg-violet-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none font-poppins-500 hover:text-violet-100 font-medium"
+                      className="flex h-5 gap-3 items-center truncate rounded-[5px] py-4 px-3 text-base text-violet-600 outline-none transition duration-300 ease-linear hover:bg-violet-50 hover:text-inherit hover:outline-none focus:bg-violet-50 focus:text-inherit focus:outline-none active:bg-violet-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none font-poppins-500 hover:text-violet-100 font-medium"
                     >
                       <PaperPlaneTilt />
                       Litepaper
                     </Link>
                   </li>
+                  <button className="bg-[#8247E5] mt-12 h-10 hover:bg-violet-600 w-full text-white font-poppins-500 font-medium">
+                    <Link target="_blank" href="https://cal.com/prasanna/grail">
+                      Contact
+                    </Link>
+                  </button>
                 </div>
-                <button className="bg-[#8247E5] h-10 hover:bg-violet-600 w-full text-white font-poppins-500 font-medium">
-                  <Link target="_blank" href="https://cal.com/prasanna/grail">
-                    Contact
-                  </Link>
-                </button>
               </ul>
             </div>
           </nav>
