@@ -21,6 +21,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import RightArrow from "../public/svg/right-arrow.svg";
 import RightArrowPurple from "../public/svg/purple-right-arrow.svg";
+import { House, PaperPlaneTilt } from "phosphor-react";
 
 export default function Home() {
   const [showMobileDropDown, setShowMobileDropDown] = useState(false);
@@ -92,8 +93,10 @@ export default function Home() {
                     type="button"
                     onClick={() => setShowMobileDropDown(!showMobileDropDown)}
                     className="inline-flex items-center justify-center rounded-md"
-                    aria-controls="mobile-menu"
-                    aria-expanded="false"
+                    data-te-sidenav-toggle-ref
+                    data-te-target="#sidenav"
+                    aria-controls="#sidenav"
+                    aria-haspopup="true"
                   >
                     <span className="sr-only">Open main menu</span>
                     <svg
@@ -116,29 +119,56 @@ export default function Home() {
               </div>
             </div>
             {/* mobile screen  */}
-            {/* <div className="sm:hidden"  id="mobile-menu"> */}
-            <div
-              className={
-                (showMobileDropDown ? "block " : "hidden ") +
-                "sm:hidden bg-[#F9F8FF] left-0 right-0 mx-6 absolute"
-              }
-              id="mobile-menu"
-            >
-              <div className="flex flex-col justify-center gap-y-2 items-center">
-                <Link
-                  href="/"
-                  className="text-[#8F8E90] font-poppins-500 hover:text-slate-900 font-medium"
+            {showMobileDropDown && (
+              <div
+                id="sidenav"
+                className="fixed top-0 left-0 z-[1035] h-screen w-60 transition-transform -translate-x-full overflow-hidden bg-white shadow-[0_4px_12px_0_rgba(0,0,0,0.07),_0_2px_4px_rgba(0,0,0,0.05)] data-[te-sidenav-hidden='false']:-translate-x-0"
+                data-te-sidenav-init
+                data-te-sidenav-hidden="false"
+                data-te-sidenav-right="true"
+              >
+                <ul
+                  className="relative flex flex-col justify-between w-full m-0 h-screen list-none"
+                  data-te-sidenav-menu-ref
                 >
-                  Home
-                </Link>
-                <Link
-                  href="/"
-                  className="text-[#8F8E90] font-poppins-500 hover:text-slate-900 font-medium"
-                >
-                  Litepaper
-                </Link>
+                  <span>
+                    <li className="relative mx-3 my-5">
+                      <Image
+                        className="block h-8 w-auto rounded-full"
+                        src={appIcon}
+                        alt="app-icon.png"
+                      />
+                    </li>
+                    <hr className="h-px mb-8 bg-gray-200 border-0 dark:bg-gray-700" />
+                    <li className="relative mb-4">
+                      <Link
+                        href="/"
+                        data-te-sidenav-link-ref
+                        className="flex h-5 gap-3 items-center truncate rounded-[5px] py-4 px-3 text-[0.875rem] text-violet-600 outline-none transition duration-300 ease-linear hover:bg-violet-50 hover:text-inherit hover:outline-none focus:bg-violet-50 focus:text-inherit focus:outline-none active:bg-violet-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none font-poppins-500 hover:text-violet-100 font-medium"
+                      >
+                        <House />
+                        Home
+                      </Link>
+                    </li>
+                    <li className="relative">
+                      <Link
+                        href="/"
+                        data-te-sidenav-link-ref
+                        className="flex h-5 gap-3 items-center truncate rounded-[5px] py-4 px-3 text-[0.875rem] text-violet-600 outline-none transition duration-300 ease-linear hover:bg-violet-50 hover:text-inherit hover:outline-none focus:bg-violet-50 focus:text-inherit focus:outline-none active:bg-violet-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none font-poppins-500 hover:text-violet-100 font-medium"
+                      >
+                        <PaperPlaneTilt />
+                        Litepaper
+                      </Link>
+                    </li>
+                  </span>
+                  <button className="bg-[#8247E5] h-10 hover:bg-violet-600 w-full text-white font-poppins-500 font-medium">
+                    <Link target="_blank" href="https://cal.com/prasanna/grail">
+                      Contact
+                    </Link>
+                  </button>
+                </ul>
               </div>
-            </div>
+            )}
           </nav>
         </div>
         {/* nav bar end  */}
